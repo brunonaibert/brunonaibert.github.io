@@ -11,11 +11,11 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 locale                   : "pt-BR"
 title                    : "Bruno Naibert"
 title_separator          : "-"
-name                     : "Bruno Naibert"
-description              : "Blog sobre tecnologia, software livre o que mais der na telha."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Bruno Naibert"
+description              : &description "Blog sobre tecnologia, software livre o que mais der na telha."
+url                      : "https://brunonaibert.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "brunonaibert/brunonaibert.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -61,7 +61,7 @@ naver-site-verification  :
 
 # Social Sharing
 twitter:
-  username               : brunonaibert
+  username               : &twitter "brunonaibert"
 facebook:
   username               :
   app_id                 :
@@ -73,7 +73,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
+    - "https://twitter.com/brunonaibert"
 # Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
@@ -83,10 +83,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Bruno Naibert"
+  name             : *name
   avatar           : /assets/images/bio-photo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Seja livre, use GNU/Linux"
-  location         : "Canoas/RS"
+  bio              : "Seja livre, use GNU/Linux."
+  location         : "Canoas, RS"
   email            :
   uri              :
   bitbucket        :
@@ -95,7 +95,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : brunonaibert
+  github           : "brunonaibert"
   gitlab           :
   google_plus      :
   keybase          :
@@ -107,7 +107,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : brunonaibert
+  twitter          : *twitter
   vine             :
   weibo            :
   xing             :
@@ -181,7 +181,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Sao_Paulo # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
