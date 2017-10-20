@@ -8,7 +8,7 @@
 minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
 
 # Site Settings
-locale                   : "pt-br"
+locale                   : "pt-BR"
 title                    : "Bruno Naibert"
 title_separator          : "-"
 name                     : "Bruno Naibert"
@@ -63,7 +63,7 @@ naver-site-verification  :
 twitter:
   username               : brunonaibert
 facebook:
-  username               : brunonaibert
+  username               :
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Bruno Naibert"
   avatar           : /assets/images/bio-photo.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Seja livre, use GNU/Linux"
   location         : "Canoas/RS"
   email            :
   uri              :
