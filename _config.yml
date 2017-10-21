@@ -47,13 +47,13 @@ staticman:
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                : 6LeRLjUUAAAAAPQNHHQThYNl3tcctUNrhsM6vYPU
-  secret                 : 6LeRLjUUAAAAAIemfCCiEj7Imkp3qqPM89KSbW3Q
+  siteKey                : "6LeRLjUUAAAAAPQNHHQThYNl3tcctUNrhsM6vYPU"
+  secret                 : "6LeRLjUUAAAAAIemfCCiEj7Imkp3qqPM89KSbW3Q"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : "onXJblz7buPFHY8MTY5Oos2aVZHqtKCJrY8XBx1LGLI"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -76,9 +76,9 @@ social:
     - "https://twitter.com/brunonaibert"
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : google-universal # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-108377422-1
 
 
 # Site Author
@@ -248,7 +248,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
   # _pages
@@ -258,5 +258,41 @@ defaults:
     values:
       layout: single
       author_profile: true
-
-include: ["_pages"]
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "docs"
+  # _recipes
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _pets
+  - scope:
+      path: ""
+      type: pets
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
