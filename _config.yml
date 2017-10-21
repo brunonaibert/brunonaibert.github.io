@@ -20,7 +20,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : staticman_v2 # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -32,7 +32,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
+  branch                 : "master" # "master"
   commitMessage          : # "New comment."
   filename               : # comment-{@timestamp}
   format                 : # "yml"
@@ -47,8 +47,8 @@ staticman:
       options:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                : 6LeRLjUUAAAAAPQNHHQThYNl3tcctUNrhsM6vYPU
+  secret                 : 6LeRLjUUAAAAAIemfCCiEj7Imkp3qqPM89KSbW3Q
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -88,7 +88,7 @@ author:
   bio              : "Seja livre, use GNU/Linux."
   location         : "Canoas, RS"
   email            :
-  uri              :
+  uri              : "https://brunonaibert.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
