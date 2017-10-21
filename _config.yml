@@ -249,7 +249,6 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      locale: "pt-BR"
       share: true
       related: true
   # _pages
