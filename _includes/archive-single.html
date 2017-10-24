@@ -35,7 +35,7 @@
       <p class="page__meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></strong> <time datetime="{{ post.date | date_to_xmlschema }}">
         <!-- Whitespace added for readability -->
         {% assign m = post.date | date: "%-m" %}
-        {{ post.date | date: "%-d" }}
+        {{ post.date | date: "%-d" }} de
         {% case m %}
           {% when '1' %}Janeiro
           {% when '2' %}Fevereiro
@@ -49,7 +49,7 @@
           {% when '10' %}Outubro
           {% when '11' %}Novembro
           {% when '12' %}Dezembro
-        {% endcase %}
+        {% endcase %} de
         {{ post.date | date: "%Y" }}
       </time></p>
     {% endif %}
