@@ -31,8 +31,8 @@
       {% endif %}
     </h2>
 
-    {% if page.date %}
-      <p class="page__meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time></p>
+    {% if post.date %}
+      <p class="page__meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></strong> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time></p>
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
