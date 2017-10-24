@@ -34,8 +34,8 @@
     {% if post.date %}
       <p class="page__meta"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i></strong> <time datetime="{{ post.date | date_to_xmlschema }}">
         <!-- Whitespace added for readability -->
-        {% assign m = page.date | date: "%-m" %}
-        {{ page.date | date: "%-d" }}
+        {% assign m = post.date | date: "%-m" %}
+        {{ post.date | date: "%-d" }}
         {% case m %}
           {% when '1' %}Janeiro
           {% when '2' %}Fevereiro
@@ -50,7 +50,7 @@
           {% when '11' %}Novembro
           {% when '12' %}Dezembro
         {% endcase %}
-        {{ page.date | date: "%Y" }}
+        {{ post.date | date: "%Y" }}
       </time></p>
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
