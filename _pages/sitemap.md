@@ -5,7 +5,7 @@ permalink: /sitemap/
 author_profile: false
 ---
 
-Uma lista de todos os posts e páginas. Para robos uma versão em XML [XML version]({{ "sitemap.xml" | absolute_url }}) .
+Uma lista de todos os posts e páginas. Para robos uma versão em [XML]({{ "sitemap.xml" | absolute_url }}) .
 
 <h2>Páginas</h2>
 {% for post in site.pages %}
