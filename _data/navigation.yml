@@ -3,6 +3,6 @@ main:
   - title: "Posts"
     url: /year-archive/
   - title: "Eventos"
-    url: /categories/#eventos
+    url: /eventos/
   - title: "Sobre"
     url: /sobre/
